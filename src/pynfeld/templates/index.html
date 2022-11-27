@@ -44,8 +44,8 @@
           <!-- The list section starts here -->
           <ol class="list-group list-group-numbered">
             <!-- For loop logic of jinja template -->
-            {%for i in range(0, len_lst)%}
-            <li class="list-group-item">{{ord_lst[i]}}</li>
+            {%for list_item in range(len_lst)%}
+            <li class="list-group-item"><a href="www.google.com">{{ord_lst[list_item]}}</a></li>
             {%endfor%}
           </ol>
           <!-- The list section ends  -->
