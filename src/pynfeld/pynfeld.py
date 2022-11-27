@@ -6,7 +6,8 @@ title = "Your Page"
 navbar = "PYNFELD"
 host = "127.0.0.1"
 port = "8080"
-ord_lst = ["Introduction", "Hello World", "First Example", "Second Example"]
+ord_lst = ["Introduction", "Hello World",
+    "First Example", "Second Example"]
 section_dict ={"title": "1. Introduction", "paragraph": "The Pynfeld is a flask warpper that is supposed to produce quick static\
     pages that will quickly setup you with a server and pages. This can be used to generate quick documentations for \
         packages, turorials etc."}

@@ -1,23 +1,25 @@
-1. install pipenv
+1. First create a virtual environment: 
+Option 1: Use pip and install pipenv
+command::pip install --user pipenv
+Result::pipenv, version 2022.11.5 (today's date), looks like they release it every day. 
+Update::I have switched to conda environment
 
-pip install --user pipenv
-the result is like :
-pipenv, version 2022.11.5 (today's date), looks like they release it every day. 
+2. Regularly use the requirements and yml file to save what packages have been used in this
+command::pip freeze > requirements.txt or 
+command::conda env export > environment.yml
 
-I have switched to conda environment
+3. Make a virtual environment
+command::pip install virtualenv 
 
-2. pip freeze > requirements.txt
-conda env export > environment.yml
+4. Create the virtual envionrment
+command::virtualenv venv | conda create -n venv
 
-3. make a virtual environment
-pip install virtualenv 
-virtualenv venv | conda create -n venv
-source venv/bin/activate | conda activate venv
-deactivate | conda deactivate
+5. Activate the virtual environment
+command::source venv/bin/activate | conda activate venv
+command::deactivate | conda deactivate
 
-4. The app runs from base.py but not from pynfeld.py
-Right now i can add list 
-next connect css to the html - now the css is also connected.
+6. Note: The app right now runs from pynfeld.py
+command:: python3 pynfeld.py
 
 The app now runs even from pynfeld, However I had to remove if __name__ = "__main__" 
 added css also and it is rendering it perfectly
@@ -26,6 +28,9 @@ added css also and it is rendering it perfectly
 element, paragraph and image parser.
 
 6. Now I can add table, paragraphs with heading. Next, I have to try to add
-paragraph with images by defining a type of dictionary.
+paragraph with images by defining a type of dictionary. I can do that too now
+
+7. Try to add footer sections now.
+Deadline: 11/28/2022.
 
 

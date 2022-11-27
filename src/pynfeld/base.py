@@ -46,7 +46,7 @@ Title : {self.title} @ host/port \
 
 	def add_table(self, ord_lst):
 		self.ord_lst = ord_lst
-		self.len_lst=len(ord_lst)
+		self.len_lst= len(ord_lst)
 		return self
 
 	def add_section(self, section_dict):
@@ -60,7 +60,7 @@ Title : {self.title} @ host/port \
 	def run_page(self):
 		@self.app.route("/")
 		def index():
-			return render_template("index.html", title=self.title, navbar = self.navbar, ord_lst = self.ord_lst, \
+			return render_template("index.html", title=self.title, navbar = self.navbar, ord_lst = self.ord_lst, 
 				len_lst=self.len_lst, section_dict = self.section_dict, theme=self.theme, card_dict = self.card_dict)
 		#if __name__ == "__main__":
 		self.app.run(self.host, self.port, self.debug)
