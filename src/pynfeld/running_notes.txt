@@ -1,0 +1,31 @@
+1. install pipenv
+
+pip install --user pipenv
+the result is like :
+pipenv, version 2022.11.5 (today's date), looks like they release it every day. 
+
+I have switched to conda environment
+
+2. pip freeze > requirements.txt
+conda env export > environment.yml
+
+3. make a virtual environment
+pip install virtualenv 
+virtualenv venv | conda create -n venv
+source venv/bin/activate | conda activate venv
+deactivate | conda deactivate
+
+4. The app runs from base.py but not from pynfeld.py
+Right now i can add list 
+next connect css to the html - now the css is also connected.
+
+The app now runs even from pynfeld, However I had to remove if __name__ = "__main__" 
+added css also and it is rendering it perfectly
+
+5. Add some documentation. Next add heading
+element, paragraph and image parser.
+
+6. Now I can add table, paragraphs with heading. Next, I have to try to add
+paragraph with images by defining a type of dictionary.
+
+

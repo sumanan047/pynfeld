@@ -1,0 +1,11 @@
+.headings {
+  text-align: center;
+}
+
+/* This blocks sets the bootstrap card to a required height 
+so that the image does not overflow form the card. */
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
